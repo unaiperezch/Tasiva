@@ -1,0 +1,12 @@
+.border-light-left{
+    border-left: 1px;
+    border-left-color: white;
+    border-left-style: solid;
+}
+.hr-footer{
+    height:100px;
+    width:0.5px;
+    border-width:0;
+    color:white;
+    background-color:white;
+}
