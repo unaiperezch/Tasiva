@@ -1,0 +1,24 @@
+#formularioContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    color: #5ea3ce;
+    font-size: 27px;
+    padding: 10px;
+}
+
+#submitButton {
+    background-color: #5ea3ce;
+    border-color: #5ea3ce;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #5ea3ce;
+}

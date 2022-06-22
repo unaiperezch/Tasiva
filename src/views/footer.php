@@ -1,5 +1,5 @@
         <footer>
-            <div class="bg-dark text-light container-fluid row">
+            <div class="bg-dark text-light row">
                 <div class="col-lg-4 p-lg-4">
                     <p>Tasiva</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, adipisci. Reprehenderit amet architecto ea, ut dolores voluptas, recusandae dicta incidunt dignissimos autem aperiam obcaecati quidem, minima est doloremque sapiente doloribus?</p>
