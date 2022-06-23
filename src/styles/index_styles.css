@@ -1,3 +1,69 @@
-.rounded-circle img{
-    width: 50px;
+
+/* GENERAL */
+.cajaTitulosApartados{
+   /*  background-color: rgb(52, 58, 64); */
+    background-color: #5ea3ce;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.titulosApartados {
+    margin-left: 20px;
+    color: white;
+}
+
+/* SERVICIO */
+
+.transformScale img:hover{
+    transform: scale(1.05,1.05);
+    transition-duration: 0.5s;
+}
+
+/* PRODUCTO */
+.contenerdorCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardProducto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}
+
+.cardProducto div {
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.tituloCard {
+    color: #5ea3ce;
+    font-size: 30px;
+}
+
+/* EQUIPO */
+.contenerdorCardsEquipo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    height: 300px;
+    margin: 50px;
+}
+
+.card {
+    margin-left: 20px;
+}
+
+/* EMPRESA */
+
+
+/* SECTORES */
+.backgroundCarrouselSectors{
+    background-color: #5ea3ce;
 }

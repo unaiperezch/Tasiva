@@ -1,4 +1,4 @@
-        <footer>
+        <footer class="container-fluid">
             <div class="bg-dark text-light row">
                 <div class="col-lg-4 p-lg-4">
                     <p>Tasiva</p>
