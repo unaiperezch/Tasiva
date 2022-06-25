@@ -25,59 +25,31 @@
 </head>
 
 <body>
-    <header class="container-fluid">
-        <div class="row">
+    <header class="position-sticky shadow_bottom" style="background-color: #FFFFFF;">
+        <div class="d-flex">
             <div class="col-lg-6 bg-muted p-lg-2 text-center">
                 <img src="src\img\logo_tasiva.jpg" alt="" height="80" class="ml-auto">
             </div>
             <nav class="navbar navbar-dark bg-muted col-lg-6 d-flex justify-content-center">
                 <li class="nav-item dropdown" style="list-style-type: none;">
-                    <a class="nav-link" href="#" data-toggle="dropdown">Somos</a>
+                    <a class="nav-link" href="#somos">Somos</a>
                 </li>
 
                 <li class="nav-item dropdown" style="list-style-type: none;">
-                    <a class="nav-link" href="#" data-toggle="dropdown">Sectores</a>
+                    <a class="nav-link" href="#sectores">Sectores</a>
                 </li>
 
                 <li class="nav-item dropdown" style="list-style-type: none;">
-                    <a class="nav-link" href="#" data-toggle="dropdown">Soluciones</a>
+                    <a class="nav-link" href="#soluciones">Soluciones</a>
                 </li>
 
                 <li class="nav-item dropdown" style="list-style-type: none;">
-                    <a class="nav-link" href="#" data-toggle="dropdown">Talento</a>
+                    <a class="nav-link" href="#talento">Talento</a>
                 </li>
 
                 <li class="nav-item" style="list-style-type: none;">
                     <a class="nav-link" href="src\views\contact.php">Contacto</a>
                 </li>
             </nav>
-            <div class="cajaImgCarrousel col-lg-12 bg-muted">
-                <div id="carousel" class="carousel slide col-lg-8 m-auto" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel" data-slide-to="1"></li>
-                        <li data-target="#carousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="src\img\logo_tasiva.jpg" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="src\img\logo_tasiva.jpg" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="src\img\logo_tasiva.jpg" alt="Third slide">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
         </div>
     </header>

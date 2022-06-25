@@ -1,16 +1,8 @@
 
 /* GENERAL */
-.cajaTitulosApartados{
-   /*  background-color: rgb(52, 58, 64); */
-    background-color: #5ea3ce;
-    height: 80px;
-    display: flex;
-    align-items: center;
-}
-
-.titulosApartados {
-    margin-left: 20px;
-    color: white;
+h1 {
+    margin-top: 20px;
+    color:#5ea3ce;
 }
 
 /* SERVICIO */
