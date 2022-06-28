@@ -42,6 +42,7 @@ include "./src/views/header.php";
         </div>
 
         <h1 id="somos">SOMOS</h1>
+        <hr>
         <section class="contenerdorCardsEquipo">
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="src\img\logo_tasiva.jpg" alt="Card image cap">
@@ -52,9 +53,9 @@ include "./src/views/header.php";
             </div>
 
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="src\img\logo_tasiva.jpg" alt="Card image cap">
+                <img class="card-img-top oficinas" src="src\img\00_2022-06-21\Equipo.jpg" alt="Card image cap" height="225">
                 <div class="card-body">
-                    <h5 class="card-title">Nombre</h5>
+                    <h5 class="card-title">Oficinas</h5>
                     <p class="card-text">Puesto</p>
                 </div>
             </div>
@@ -68,9 +69,8 @@ include "./src/views/header.php";
             </div>
         </section>
 
-        <div class="cajaTitulosApartados">
-            <h1 class="titulosApartados">EMPRESA</h1>
-        </div>
+        <h1 id="empresa">EMPRESA</h1>
+        <hr>
         <section class="mt-lg-4">
             <div class="row justify-content-around">
                 <p class="d-flex align-items-center">
@@ -88,6 +88,7 @@ include "./src/views/header.php";
 
 
         <h1 id="sectores">SECTORES</h1>
+        <hr>
         <section>
             <h2 class="d-none">SECTORES</h2>
             <div class="d-flex justify-content-around mt-5 mb-5">
@@ -118,24 +119,29 @@ include "./src/views/header.php";
             </div>
         </section>
 
-        <div class="cajaTitulosApartados">
-            <h1 class="titulosApartados" id="soluciones">SOLUCIONES</h1>
-        </div>
+        <h1 id="soluciones">SOLUCIONES</h1>
+        <hr>
         <section>
             <h2 class="d-none">Servicios</h2>
             <div class="d-flex justify-content-around mt-5 mb-5">
-                <div class="text-center transformScale">
-                    <img src="src\img\logo_tasiva.jpg" alt="" class="rounded-circle border-dark border" width="100px" height="100px">
-                    <h3 class="mt-lg-5">Producto</h3>
-                </div>
-                <div class="text-center transformScale">
-                    <img src="src\img\logo_tasiva.jpg" alt="" class="rounded-circle border-dark border" width="100px" height="100px">
-                    <h3 class="mt-lg-5">A medida</h3>
-                </div>
-                <div class="text-center transformScale">
-                    <img src="src\img\logo_tasiva.jpg" alt="" class="rounded-circle border-dark border" width="100px" height="100px">
-                    <h3 class="mt-lg-5">I+D</h3>
-                </div>
+                <a href="src\views\soluciones.php">
+                    <div class="text-center transformScale" >
+                        <img src="src\img\logo_tasiva.jpg" alt="" class="rounded-circle border-dark border" width="100px" height="100px">
+                        <h3 class="mt-lg-5">Producto</h3>
+                    </div>
+                </a>
+                <a href="src\views\soluciones.php">
+                    <div class="text-center transformScale" href="src\views\soluciones.php">
+                        <img src="src\img\logo_tasiva.jpg" alt="" class="rounded-circle border-dark border" width="100px" height="100px">
+                        <h3 class="mt-lg-5">A medida</h3>
+                    </div>
+                </a>
+                <a href="src\views\soluciones.php">
+                    <div class="text-center transformScale" href="src\views\soluciones.php">
+                        <img src="src\img\logo_tasiva.jpg" alt="" class="rounded-circle border-dark border" width="100px" height="100px">
+                        <h3 class="mt-lg-5">I+D</h3>
+                    </div>
+                </a>
             </div>
         </section>
 

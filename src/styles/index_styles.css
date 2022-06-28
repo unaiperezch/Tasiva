@@ -59,3 +59,8 @@ h1 {
 .backgroundCarrouselSectors{
     background-color: #5ea3ce;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
