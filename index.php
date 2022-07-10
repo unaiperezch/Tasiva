@@ -118,6 +118,7 @@ include "./src/views/header.php";
                 </div>
             </div>
         </section>
+        
         <h1 id="soluciones">SOLUCIONES</h1>
         <hr>
         <section>
