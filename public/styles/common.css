@@ -1,0 +1,6 @@
+@import url("./carousel.css");
+
+.divider {
+    border-top: 2px solid #70BADF;
+    margin: 5rem auto;
+}

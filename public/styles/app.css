@@ -1,0 +1,21 @@
+@import url("./header.css");
+@import url("./footer.css");
+@import url("./common.css");
+@import url("./main.css");
+@import url("./contact.css");
+
+@font-face {
+    font-family: Istok Web;
+    src: url("../fonts/IstokWeb-Regular.ttf");
+}
+
+body {
+    font-family: Istok Web, Arial, Helvetica, sans-serif !important;
+    font-size: 16px;
+    color: #666666 !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: #5EA3CE !important;
+}

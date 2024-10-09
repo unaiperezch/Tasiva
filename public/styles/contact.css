@@ -1,0 +1,55 @@
+.contact-dinamic-img-section {
+    height: 500px !important;
+    background-image: url("../img/Contacto/tasiva-empresa-vision-artificial-navarra.jpg");
+    /*transform: translate(0px, 126.656px);*/
+}
+
+.contact-info-section, .contact-map-section,.contact-form-section {
+    margin-top: 100px !important;
+}
+
+.contact-map-section {
+    margin-bottom: 100px !important;
+}
+/* 
+form {
+    color: #EEEEEE;
+    font-size: 16px;
+} */
+
+.input-contact {
+    background-color: #EEEEEE;
+    border: none;
+    border-radius: 0px;
+    color: #999;
+    font-size: 16px;
+    width: 95%;
+    padding: 10px;
+}
+
+textarea {
+    width: 100% !important;
+}
+
+.contact-checkbox {
+    background-color: #EEEEEE !important;
+    color: #5EA3CE !important;
+    border: none !important;
+}
+
+.form-check-input:checked, .form-check-input:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.form-check-input:checked[type=checkbox] {
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e") !important; */
+    background-color: #5EA3CE !important;
+}
+
+.btn-contact-section {
+    padding: 0.75rem 1.25rem !important;
+    background-color: #5EA3CE !important;
+    border-radius: 0 !important;
+    border: none !important;
+}

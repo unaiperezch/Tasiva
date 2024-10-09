@@ -1,0 +1,21 @@
+.apps-section {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+
+.dinamic-img-section {
+    height: 500px !important;
+    margin-top: 100px;
+    background-image: url("../img/Main/tasiva-vision-artificial-home.jpg");
+    /*transform: translate(0px, 126.656px);*/
+}
+
+.objetives-section {
+    margin-top: 100px !important;
+}
+
+.title-main-section {
+    font-size: 22px; 
+    color: #5EA3CE;
+    font-weight: bold;
+}

@@ -1,0 +1,119 @@
+{% extends "base.twig" %} {% block body %}
+
+<div>
+  {% include "./Main/components/carousel.twig" %}
+
+  <div class="container">
+    <div
+      class="row d-flex align-items-center justify-content-center apps-section"
+    >
+      <div class="col-lg-5">
+        <img class="w-100" src="./img/Main/foto_home_1.jpg" alt="Foto Home 1" />
+      </div>
+      <div class="col-lg-5">
+        <div>
+          <h3 class="title-main-section">¿QUÉ ES LA VISIÓN ARTIFICIAL?</h3>
+          <p>–</p>
+          <p>
+            La visión artificial como tal, y más concretamente su tecnología, es
+            relativamente reciente, ya que empezó su introducción en la
+            industria, a un nivel muy básico, al final de los años 80 principios
+            de los 90. Su desarrollo y rápido crecimiento se ha producido de la
+            mano de los avances informáticos, tanto de hardware…
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row d-flex align-items-center justify-content-center apps-section"
+    >
+      <div class="col-lg-5">
+        <div>
+          <h3 class="title-main-section">
+            ALGUNAS APLICACIONES DE VISIÓN ARTIFICIAL
+          </h3>
+          <p>–</p>
+          <p>
+            Las aplicaciones más demandadas actualmente son, entre otras, el
+            posicionado de piezas, el reconocimiento de elementos, piezas o
+            características, la clasificación, la inspección y detección de
+            defectos, el guiado de robots, la verificación de elementos o
+            características, la metrología industrial sin…
+          </p>
+        </div>
+        <p>
+          <a href="/aplicaciones" style="text-decoration: none; color: #5ea3ce"
+            >+ INFORMACIÓN</a
+          >
+        </p>
+      </div>
+      <div class="col-lg-5">
+        <img class="w-100" src="./img/Main/foto_home_2.jpg" alt="Foto Home 2" />
+      </div>
+    </div>
+  </div>
+
+  <div class="dinamic-img-section">
+  </div>
+
+  <div class="container d-flex justify-content-evenly objetives-section">
+    <div class="col-lg-3 text-center">
+      <div class="text-center mb-4">
+        <img
+          class="w-50"
+          src="./img/Main/icono-tasiva-01.png"
+          alt="Icono nuestro objetivo"
+        />
+      </div>
+      <div class="text-start">
+        <h3 class="title-main-section">NUESTRO OBJETIVO</h3>
+        <p>–</p>
+        <p class="col-lg-10">
+          El objetivo de la empresa es la aportación de productos y servicios
+          relacionados con la visión artificial.
+        </p>
+      </div>
+    </div>
+    <div class="col-lg-3 text-center">
+      <div class="text-center mb-4">
+        <img
+          class="w-50"
+          src="./img/Main/icono-tasiva-02.png"
+          alt="Icono nuestro objetivo"
+        />
+      </div>
+      <div class="text-start">
+        <h3 class="title-main-section">TECNOLOGÍA</h3>
+        <p>–</p>
+        <p class="col-lg-10">
+          La aplicación de visión artificial en las empresas puede y debe
+          convertirse en una ventaja competitiva diferenciadora y permanente.
+        </p>
+      </div>
+    </div>
+    <div class="col-lg-3 text-center">
+      <div class="text-center mb-4">
+        <img
+          class="w-50"
+          src="./img/Main/icono-tasiva-03.png"
+          alt="Icono nuestro objetivo"
+        />
+      </div>
+      <div class="text-start">
+        <h3 class="title-main-section">NUESTRO EQUIPO</h3>
+        <p>–</p>
+        <p class="col-lg-10">
+          Nuestro equipo está formado por personas altamente cualificadas, con
+          una gran experiencia en el campo de la ingeniería industrial y
+          especialmente en el de la visión artificial.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {% include "./Common/divider.twig" %} 
+  
+  {% include "./Main/components/financial_info.twig" %}
+</div>
+
+{% endblock %}

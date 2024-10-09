@@ -1,0 +1,37 @@
+<div class="container d-flex justify-content-between align-items-center container-main-page">
+	<div>
+		<span></span>
+		<a href="/">
+			<img class="header-logo" src="http://nuevaweb.tasiva.com/wp-content/uploads/2020/02/logo_tasiva.jpg" alt="TASIVA" id="logo" data-height-percentage="80" data-actual-width="0" data-actual-height="0">
+		</a>
+	</div>
+	<div>
+		<nav class="nav-main-page">
+			<ul class="nav">
+				<li class="nav-item">
+					<a class="nav-link {% if requested_path == '/' %} active {% endif %} a-main-menu" aria-current="page" href="/">INICIO</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link a-main-menu {% if requested_path == '/tecnologias' %} active {% endif %}" aria-current="page" href="/tecnologias">TECNOLOGÍAS</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle a-main-menu {% if requested_path == '/productos' %} active {% endif %}" data-bs-toggle="dropdown" href="/productos" role="button" aria-expanded="false">PRODUCTOS   </a>
+					<ul class="dropdown-menu">
+						<li>
+							<a class="dropdown-item a-main-menu a-secondary-menu {% if requested_path == '/vision' %} active {% endif %}" href="#">VISIÓN</a>
+						</li>
+						<li>
+							<a class="dropdown-item a-main-menu a-secondary-menu {% if requested_path == '/inteligencia' %} active {% endif %}" href="#">INTELIGENCIA</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link a-main-menu {% if requested_path == '/contacto' %} active {% endif %}" aria-current="page" href="/contacto">CONTACTO</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link a-main-menu {% if requested_path == '/blog' %} active {% endif %}" aria-current="page" href="/blog">BLOG</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>

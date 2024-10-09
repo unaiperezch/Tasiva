@@ -1,0 +1,36 @@
+header {
+    box-shadow: 0 0 7px rgba(0, 0, 0, .1) !important;
+}
+
+.container-main-page {
+    padding: 10px 0px;
+}
+
+.nav-main-page, .a-secondary-menu {
+    font-size: 14px;
+}
+
+.header-logo {
+    width: 125px;
+    max-height: 54%;
+}
+
+.a-main-menu {
+    text-decoration: none;
+    color: #A4A4A4 !important;
+    font-weight: 500;
+}
+
+.active {
+    color: #5EA3CE !important;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+      pointer-events: none;
+  }
+
+

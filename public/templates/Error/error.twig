@@ -1,0 +1,82 @@
+{# base.twig #}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>404 No encontrado | TASIVA</title>
+    <link
+      rel="icon"
+      href="https://tasiva.com/wp-content/uploads/2020/02/cropped-logo_tasiva-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://tasiva.com/wp-content/uploads/2020/02/cropped-logo_tasiva-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://tasiva.com/wp-content/uploads/2020/02/cropped-logo_tasiva-180x180.png"
+    />
+    <style type="text/css" id="custom-background-css">
+      body.custom-background {
+        background-color: #ffffff;
+      }
+    </style>
+    <link rel="shortlink" href="https://tasiva.com/" />
+    <link rel="canonical" href="https://tasiva.com/" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/styles/error.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <header>{% include "header.twig" %}</header>
+  <body>
+    <div class="container d-flex full-height">
+      <div class="error col-lg-9">
+        <h1 class="error404">No se encontraron resultados</h1>
+        <p class="error-msg col-lg-10">
+          La página solicitada no pudo encontrarse. Trate de perfeccionar su
+          búsqueda o utilice la navegación para localizar la entrada.
+        </p>
+      </div>
+      <div class="error-sidebar">
+        <div class="col-lg-10 m-auto">
+          <div class="error-news-section">
+            <h2 class="error-titulo-noticias">NOTICIAS TASIVA</h2>
+            <li class="news-list col-lg-12">
+              <ul class="p-0 mb-4 col-lg-6">
+                {% include "./Common/news.twig" with
+                {'href':'https://tasiva.com/archivos/187',
+                'image':'https://tasiva.com/wp-content/uploads/2020/02/foro-empresas-navarra-150x150.jpg',
+                'titulo':'Foro Empresa 2020', 'descripcion':'Descripción de noticia [...]'}
+                %}
+              </ul>
+              <ul class="p-0">
+                {% include "./Common/news.twig" with
+                {'href':'https://tasiva.com/archivos/177',
+                'image':'https://tasiva.com/wp-content/uploads/2020/02/sumit-navarra-tasiva-150x150.jpg',
+                'titulo':'Prueba de noticia', 'descripcion':'Descripción de noticia para comprobar la anchura del apartado [...]'}
+                %}
+              </ul>
+            </li>
+          </div>
+          {% include "./Common/address.twig" %}
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <footer>{% include "footer.twig" %}</footer>
+</html>
