@@ -1,9 +1,15 @@
 {% extends "base.twig" %} {% block body %}
 
-<div>
+<div> 
+  <div class="container main-text-section text-center">
+    <div class="col-lg-6 mx-auto">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error assumenda, quam autem at consequatur dolorum saepe eligendi quis neque? Cum labore libero officia perspiciatis, ab odio placeat maiores cumque ut.
+    </div>
+  </div>
+
   {% include "./Main/components/carousel.twig" %}
 
-  <div class="container">
+  <!-- <div class="container">
     <div
       class="row d-flex align-items-center justify-content-center apps-section"
     >
@@ -109,11 +115,15 @@
         </p>
       </div>
     </div>
-  </div>
+  </div> -->
 
   {% include "./Common/divider.twig" %} 
   
   {% include "./Main/components/financial_info.twig" %}
 </div>
 
+{% endblock %}
+
+{% block footer %}
+    {% include "./footer.twig" %}
 {% endblock %}

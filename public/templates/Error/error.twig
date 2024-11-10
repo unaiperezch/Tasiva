@@ -46,30 +46,6 @@
           búsqueda o utilice la navegación para localizar la entrada.
         </p>
       </div>
-      <div class="error-sidebar">
-        <div class="col-lg-10 m-auto">
-          <div class="error-news-section">
-            <h2 class="error-titulo-noticias">NOTICIAS TASIVA</h2>
-            <li class="news-list col-lg-12">
-              <ul class="p-0 mb-4 col-lg-6">
-                {% include "./Common/news.twig" with
-                {'href':'https://tasiva.com/archivos/187',
-                'image':'https://tasiva.com/wp-content/uploads/2020/02/foro-empresas-navarra-150x150.jpg',
-                'titulo':'Foro Empresa 2020', 'descripcion':'Descripción de noticia [...]'}
-                %}
-              </ul>
-              <ul class="p-0">
-                {% include "./Common/news.twig" with
-                {'href':'https://tasiva.com/archivos/177',
-                'image':'https://tasiva.com/wp-content/uploads/2020/02/sumit-navarra-tasiva-150x150.jpg',
-                'titulo':'Prueba de noticia', 'descripcion':'Descripción de noticia para comprobar la anchura del apartado [...]'}
-                %}
-              </ul>
-            </li>
-          </div>
-          {% include "./Common/address.twig" %}
-        </div>
-      </div>
     </div>
 
     <script

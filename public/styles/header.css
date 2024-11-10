@@ -25,6 +25,11 @@ header {
     color: #5EA3CE !important;
 }
 
+.dropdown-item:focus {
+    background-color: #5EA3CE !important;
+    color: #ffffff !important;
+}
+
 .dropdown:hover>.dropdown-menu {
     display: block;
   }

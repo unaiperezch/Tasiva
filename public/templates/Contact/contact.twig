@@ -1,123 +1,121 @@
-{% extends "base.twig" %} {% block body %}
+{% extends "base.twig" %}
+{% block body %}
 
-<div class="contact-dinamic-img-section"></div>
+	<div class="contact-dinamic-img-section"></div>
 
-<div class="container d-flex justify-content-evenly contact-info-section">
-  <div class="col-lg-4">
-    <h3 class="title-main-section">
-      PARA CUALQUIER CONSULTA CONTACTA CON NOSOTROS
-    </h3>
-    <p>–</p>
-    <p>
-      Si tienes cualquier tipo de consulta, contacta con nosotros a través de
-      nuestro formulario.
-    </p>
-  </div>
-  <div class="col-lg-4">
-    <h3 class="title-main-section">TASIVA</h3>
-    <p>–</p>
-    <p>
-      Polígono Industrial Noáin Esquíroz | Calle O Nº 2 P3 08 31110 Noáin /
-      Navarra
-    </p>
-    <p>
-      <a href="mailto:info@tasiva.com" target="_blank" rel="noopener noreferrer"
-        >info@tasiva.com</a
-      >&nbsp;·&nbsp;<a
-        href="tel:948316506"
-        target="_blank"
-        rel="noopener noreferrer"
-        >T. 948 316 506</a
-      >
-    </p>
-  </div>
-</div>
+	<div class="container d-flex justify-content-evenly contact-info-section">
+		<div class="col-lg-6">
+			<h3 class="title-main-section">
+				PARA CUALQUIER CONSULTA CONTACTA CON NOSOTROS
+			</h3>
+			<p>–</p>
+			<p>
+				Si tienes cualquier tipo de consulta, contacta con nosotros a través de
+																      nuestro formulario.
+			</p>
+		</div>
+	</div>
 
-<div class="container contact-form-section">
-  <form
-    action="/contacto"
-    method="post"
-    class="d-flex flex-column align-items-center"
-  >
-    <div class="d-flex mb-3 col-lg-10 d-flex justify-content-between">
-      <div class="col-lg-6 text-start">
-        <input
-          type="text"
-          class="input-contact"
-          id="nameInput"
-          placeholder="NOMBRE"
-          name="nameInput"
-        />
-      </div>
-      <div class="col-lg-6 text-end">
-        <input
-          type="email"
-          class="input-contact"
-          id="emailInput"
-          aria-describedby="emailHelp"
-          placeholder="EMAIL"
-          name="emailInput"
-        />
-      </div>
-    </div>
-    <div class="d-flex mb-3 col-lg-10 d-flex justify-content-between">
-      <div class="col-lg-6 text-start">
-        <input
-          type="text"
-          class="input-contact"
-          id="companyInput"
-          placeholder="EMPRESA"
-          name="companyInput"
-        />
-      </div>
-      <div class="col-lg-6 text-end">
-        <input
-          type="number"
-          class="input-contact"
-          id="telfInput"
-          placeholder="TELÉFONO"
-          name="telfInput"
-        />
-      </div>
-    </div>
-    <div class="mb-3 col-lg-10">
-      <textarea
-        rows="5"
-        cols="50"
-        class="input-contact"
-        id="consultInput"
-        placeholder="CONSULTA"
-        name="consultInput"
-      ></textarea>
-    </div>
-    <div class="mb-3 form-check col-lg-10">
-      <p>PRIVACIDAD</p>
-      <input type="checkbox" class="form-check-input contact-checkbox" id="privacity" />
-      <label class="form-check-label" for="privacity">He leído y acepto la política de privacidad y protección de datos de carácter personal. [Ver política privacidad]</label>
-    </div>
-    <div class="col-lg-10 text-end">
-      <button type="submit" class="btn btn-primary btn-contact-section">Enviar</button>
-    </div>
-  </form>
-</div>
+	<div class="container contact-form-section">
+		<div class="accordion accordion-flush" id="accordionContact">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="flush-headingOne">
+					<button class="accordion-button collapsed accordion-contact-title" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+						Para información y consultas
+					</button>
+				</h2>
+				<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionContact">
+					<div class="accordion-body">
+						<form action="/contacto" method="post" class="d-flex flex-column align-items-center">
+							<input type="text" class="d-none" id="formType" value="info" name="formType" required/>
+							<div class="d-flex mb-3 col-lg-10 d-flex justify-content-between">
+								<div class="col-lg-6 text-start">
+									<input type="text" class="input-contact" id="nameInput" placeholder="NOMBRE" name="nameInput" required/>
+								</div>
+								<div class="col-lg-6 text-end">
+									<input type="email" class="input-contact" id="emailInput" aria-describedby="emailHelp" placeholder="EMAIL" name="emailInput" required/>
+								</div>
+							</div>
+							<div class="d-flex mb-3 col-lg-10 d-flex justify-content-between">
+								<div class="col-lg-6 text-start">
+									<input type="text" class="input-contact" id="companyInput" placeholder="EMPRESA" name="companyInput" required/>
+								</div>
+								<div class="col-lg-6 text-end">
+									<input type="number" class="input-contact" id="telfInput" placeholder="TELÉFONO" name="telfInput" required/>
+								</div>
+							</div>
+							<div class="mb-3 col-lg-10">
+								<textarea rows="5" cols="50" class="input-contact" id="consultInput" placeholder="CONSULTA" name="consultInput" required></textarea>
+							</div>
+							<div class="mb-3 form-check col-lg-10">
+								<p>PRIVACIDAD</p>
+								<input type="checkbox" class="form-check-input contact-checkbox" id="privacity" required/>
+								<label class="form-check-label" for="privacity">He leído y acepto la política de privacidad y protección de datos de carácter personal. [Ver política privacidad]</label>
+							</div>
+							<div class="col-lg-10 text-end">
+								<button type="submit" class="btn btn-primary btn-contact-section">Enviar</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="flush-headingTwo">
+					<button class="accordion-button collapsed accordion-contact-title" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+						¿Quieres trabajar con nosotros?
+					</button>
+				</h2>
+				<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionContact">
+					<div class="accordion-body">
+						<form action="/contacto" method="post" class="d-flex flex-column align-items-center">
+              <input type="text" class="d-none" id="formType" value="want-to-work" name="formType" required/>
+							<div class="d-flex mb-3 col-lg-10 d-flex justify-content-between">
+								<div class="col-lg-6 text-start">
+									<input type="text" class="input-contact" id="nameInput" placeholder="NOMBRE" name="nameInput" required/>
+								</div>
+								<div class="col-lg-6 text-end">
+									<input type="number" class="input-contact" id="telfInput" placeholder="TELÉFONO" name="telfInput" required/>
+								</div>
+							</div>
+							<div class="mb-3 col-lg-10">
+								<input type="email" class="input-contact input-large" id="emailInput" aria-describedby="emailHelp" placeholder="EMAIL" name="emailInput" required/>
+							</div>
+							<div class="mb-3 col-lg-10">
+								<textarea rows="5" cols="50" class="input-contact" id="consultInput" placeholder="CONSULTA" name="consultInput" required></textarea>
+							</div>
+							<div class="mb-3 col-lg-10">
+								<label for="cv">Adjunte su CV:</label>
+								<input type="file" id="cv" name="cv" accept=".pdf" required/>
+							</div>
+							<div class="mb-3 form-check col-lg-10">
+								<p>PRIVACIDAD</p>
+								<input type="checkbox" class="form-check-input contact-checkbox" id="privacity" required/>
+								<label class="form-check-label" for="privacity">He leído y acepto la política de privacidad y protección de datos de carácter personal. [Ver política privacidad]</label>
+							</div>
+							<div class="col-lg-10 text-end">
+								<button type="submit" class="btn btn-primary btn-contact-section">Enviar</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-<div class="container contact-map-section">
-  <div class="row">
-    <p style="font-weight: bold">
-      LOCALIZACIÓN GPS: 42.774071111286645, -1.6353197730880578
-    </p>
-  </div>
-  <div class="row">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2928.682225048789!2d-1.637905423462598!3d42.77392540885372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd50922a2b2b1727%3A0xa3a5c87496090795!2sTasiva%20Vision!5e0!3m2!1ses!2ses!4v1727890337959!5m2!1ses!2ses"
-      width="1080"
-      height="600"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
-  </div>
-</div>
+	<div class="container contact-map-section">
+		<div class="row">
+			<p style="font-weight: bold">
+				LOCALIZACIÓN GPS: 42.774071111286645, -1.6353197730880578
+			</p>
+		</div>
+		<div class="row">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2928.682225048789!2d-1.637905423462598!3d42.77392540885372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd50922a2b2b1727%3A0xa3a5c87496090795!2sTasiva%20Vision!5e0!3m2!1ses!2ses!4v1727890337959!5m2!1ses!2ses" width="1080" height="600" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>
 
+{% endblock %}
+
+{% block footer %}
+  {% include "./footer_address.twig" %}
+	{% include "footer.twig" %}
 {% endblock %}

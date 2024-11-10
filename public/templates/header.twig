@@ -8,20 +8,40 @@
 	<div>
 		<nav class="nav-main-page">
 			<ul class="nav">
-				<li class="nav-item">
-					<a class="nav-link {% if requested_path == '/' %} active {% endif %} a-main-menu" aria-current="page" href="/">INICIO</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link a-main-menu {% if requested_path == '/tecnologias' %} active {% endif %}" aria-current="page" href="/tecnologias">TECNOLOGÍAS</a>
-				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle a-main-menu {% if requested_path == '/productos' %} active {% endif %}" data-bs-toggle="dropdown" href="/productos" role="button" aria-expanded="false">PRODUCTOS   </a>
+					<a class="nav-link dropdown-toggle a-main-menu {% if requested_path == '/tecnologias' %} active {% endif %}" data-bs-toggle="dropdown" href="/tecnologias" role="button" aria-expanded="false">TECNOLOGÍAS</a>
 					<ul class="dropdown-menu">
 						<li>
-							<a class="dropdown-item a-main-menu a-secondary-menu {% if requested_path == '/vision' %} active {% endif %}" href="#">VISIÓN</a>
+							<a class="dropdown-item a-main-menu a-secondary-menu {% if requested_path == '/tecnologias/vision-artificial' %} active {% endif %}" href="/tecnologias/vision-artificial">Visión Artificial</a>
 						</li>
 						<li>
-							<a class="dropdown-item a-main-menu a-secondary-menu {% if requested_path == '/inteligencia' %} active {% endif %}" href="#">INTELIGENCIA</a>
+							<a class="dropdown-item a-main-menu a-secondary-menu {% if requested_path == '/tecnologias/inteligencia-artificial' %} active {% endif %}" href="/tecnologias/inteligencia-artificial">Inteligencia Artificial</a>
+						</li>
+						<li>
+							<a class="dropdown-item a-main-menu a-secondary-menu {% if requested_path == '/tecnologias/robotica-y-automatizacion' %} active {% endif %}" href="/tecnologias/robotica-y-automatizacion">Robótica y Automatización</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle a-main-menu {% if requested_path == '/productos' %} active {% endif %}" data-bs-toggle="dropdown" href="/productos" role="button" aria-expanded="false">PRODUCTOS</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a class="dropdown-item a-main-menu a-secondary-menu {% if requested_path == '/productos/detectas' %} active {% endif %}" href="/productos/detectas">DetecTas</a>
+						</li>
+						<li>
+							<a class="dropdown-item a-main-menu a-secondary-menu {% if requested_path == '/productos/selectas' %} active {% endif %}" href="/productos/selectas">SelecTas</a>
+						</li>
+						<li>
+							<a class="dropdown-item a-main-menu a-secondary-menu {% if requested_path == '/productos/litas' %} active {% endif %}" href="/productos/litas">LiTas</a>
+						</li>
+						<li>
+							<a class="dropdown-item a-main-menu a-secondary-menu {% if requested_path == '/productos/datas' %} active {% endif %}" href="/productos/datas">DaTas</a>
+						</li>
+						<li>
+							<a class="dropdown-item a-main-menu a-secondary-menu {% if requested_path == '/productos/vision-artificial' %} active {% endif %}" href="/productos/vision-artificial">Visión Artificial</a>
+						</li>
+						<li>
+							<a class="dropdown-item a-main-menu a-secondary-menu {% if requested_path == '/productos/inteligencia-artificial' %} active {% endif %}" href="/productos/inteligencia-artificial">Inteligencia Artificial</a>
 						</li>
 					</ul>
 				</li>
